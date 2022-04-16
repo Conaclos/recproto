@@ -1,0 +1,20 @@
+{
+  "name": "@conaclos/recproto",
+  "version": "1.0.0",
+  "description": "CLI for detecting protobuf schemas with recursive types",
+  "type": "module",
+  "bin": "./index.js",
+  "scripts": {
+    "build": "esbuild --bundle index.js --outfile=dist/recproto --platform=node --format=cjs --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victorien Elvinger",
+  "license": "MIT",
+  "dependencies": {
+    "proto-parse": "^0.0.5",
+    "protobufjs": "^6.11.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.36"
+  }
+}
